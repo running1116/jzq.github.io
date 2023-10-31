@@ -4,8 +4,15 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, Hexo">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="Spring, Hexo">
+    <meta name="description" content="
+什么是Spring？
+
+Spring是一个轻量级的控制反转（IOC)和面向切面(AOP)的容器框架，是为Java应用程序提供基础性服务的一套开源框架
+Spring是一个生态：可以构建Java应用所需的一切基础设施
+
+
+Spring的优点？">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +24,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | Hexo</title>
+    <title>Spring | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -334,12 +341,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">Spring</h1>
                 </div>
             </div>
         </div>
@@ -361,9 +368,13 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Spring/">
+                                <span class="chip bg-color">Spring</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -396,19 +407,178 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+                <ul>
+<li><p>什么是Spring？</p>
+<ul>
+<li>Spring是一个轻量级的控制反转（IOC)和面向切面(AOP)的容器框架，是为Java应用程序提供基础性服务的一套开源框架</li>
+<li>Spring是一个生态：可以构建Java应用所需的一切基础设施</li>
+</ul>
+</li>
+<li><p>Spring的优点？</p>
+<ul>
+<li>Spring属于低浸入式设计，代码污染极低</li>
+<li>Spring的DI机制将对象之间的依赖关系交给框架处理，减少组件的耦合性；</li>
+<li>Spring对于主流应用框架提供了集成支持</li>
+</ul>
+</li>
+<li><p>Spring两大核心是什么？</p>
+<ul>
+<li>IoC&#x2F;AOP<ul>
+<li>IoC&#x2F;DI：控制反转就是创建对象的控制权，交给Spring管理,IoC主要实现方式有两种：依赖查找和依赖注入<ul>
+<li>DI(依赖注入)：有IoC容器动态将某个对象所需要的外部资源（包括对象，资源，常量数据）注入到组件中，简单的说就是IoC容器会把当前对象所需要的外部资源动态注入给我们</li>
+</ul>
+</li>
+<li>AOP：面向切面编程，AOP是OOP的一种延续，把所有公用代码剥离出来，单独放置到，某个类中进行集中管理，在具体运行时，由容器进行动态织入这些公用代码</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>AOP能解决哪些问题？</p>
+<ul>
+<li><p>主要解决不改变原有业务逻辑的情况下，增强横切逻辑代码，根本上解耦合</p>
+<p>，避免横切逻辑代码重复</p>
+</li>
+</ul>
+</li>
+<li><p>AOP如何实现的</p>
+<ul>
+<li>通过动态代理实现。</li>
+</ul>
+</li>
+<li><p>@AutoWired和@Resource注解的区别？</p>
+<ul>
+<li>@AutoWired属于Spring框架，默认使用类型（ByType）进行注入，按照类型匹配失败后，再按照名字ByName匹配</li>
+<li>@Resource是Java注解，Spring支持@Resource。而@Resource首选按照ByName注入，如果匹配失败再按照类型ByType匹配注入</li>
+<li>@AutoWired注解注入的对象需要再IOC容器中存在，否则需要加上属性required&#x3D;false,表示忽略当前要注入的Bean，如果有直接注入，如果没有则跳过，不会报错</li>
+</ul>
+</li>
+<li><p>Spring如何解决循环依赖问题？</p>
+<ul>
+<li>对依赖循环的两个类使用@Lazy，通过延迟加载的方式防止循环依赖，也就是它没有完初始化，而是创建一个代理将它注入另一个，只有第一次使用它时才会创建</li>
+<li>使用二级三级缓存</li>
+</ul>
+</li>
+<li><p>事务注解以及作用？</p>
+<ul>
+<li>为单个方法或类上添加事务管理</li>
+<li>标注事务注解的类，其全部方法都有事务</li>
+<li>标注了事务注解的方法，默认情况会开启事务，方法中全部功能执行完成以后，自动提交事务，默认情况下，如果方法出现了RuntimeException则会回退事务</li>
+<li>Spring框架的声明式事务管理是通过Spring面向切面编程（AOP）实现的，底层依赖数据库的事务功能</li>
+</ul>
+</li>
+<li><p>Spring事务</p>
+<ul>
+<li>Spring框架为事务管理提供了一个一致的抽象，在不同的事务API中具有一致的编程模型</li>
+<li>支持声明式事务管理，与编程时事务相比，编程式事务管理的API更简单。往往只需要在类或者方法上标注事务注解即可</li>
+</ul>
+</li>
+<li><p>Spring（SpringBoot）常用的注解有哪些？都有什么用？</p>
+<ul>
+<li>声明Bean注解<ul>
+<li>@Component组件</li>
+<li>@Service：在业务逻辑层使用</li>
+<li>@Repository：在数据访问层使用</li>
+<li>@Controller：在控制层使用</li>
+</ul>
+</li>
+<li>注入Bean注解<ul>
+<li>@AutoWried：由Spring提供</li>
+<li>@Resource：由J2EE提供</li>
+</ul>
+</li>
+<li>Java配置类注解<ul>
+<li>@Configuration：声明当前类为配置类</li>
+<li>@Bean：注解在方法上，声明当前方法的返回值为一个Bean</li>
+<li>@Scope：设置Bean的作用域</li>
+<li>@Value：为属性注入值</li>
+</ul>
+</li>
+<li>切面（AOP）注解<ul>
+<li>@Aspect：声明一个切面</li>
+<li>@Before：在方法执行之前执行</li>
+<li>@After：无论是否有异常之后都会执行</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>依赖注入的三种方式</p>
+<ul>
+<li>属性注入</li>
+<li>构造器注入</li>
+<li>setter方法注入</li>
+</ul>
+</li>
+<li><p>Spring中Bean的作用域</p>
+<ul>
+<li>Spring框架支持以下五个作用域：singleton，prototype，request，session，global session</li>
+<li>常用两种：singleton，prototype</li>
+</ul>
+</li>
+<li><p>Spring MVC,Spring Boot，Spring Cloud的区别是什么？</p>
+<ul>
+<li>Spring是一个轻量级的控制反转和面向切面的容器框架，是Spring全家桶的基石</li>
+<li>Spring MVC是Spring的一个模块，一个wed框架，使得开发wed应用变得很容易</li>
+<li>Spring配置复杂，所以推出了Spring Boot，约定由于配置，简化了Spring的配置流程，做到开箱即用</li>
+<li>SpringCloud构建与Spring Boot之上，是一个微服务全家桶方案，可以快速搭建微服务应用</li>
+</ul>
+</li>
+</ul>
+<h2 id="SpringBoot"><a href="#SpringBoot" class="headerlink" title="SpringBoot"></a>SpringBoot</h2><ul>
+<li>Spring与SpringBoot的区别<ul>
+<li>Spring为Java开发提供了全面的基础框架支持，包含了很多很好用的功能，比如依赖注入和开箱即用的模块，如Spring JDBC，Spring MVC等，这些模块缩短了应用程序的开发时间，提高了应用程序的开发效率</li>
+<li>SpringBoot是Spring框架的拓展，它消除设置Spring应用程序所需要的XML配置，为更快更高效的开发生态系统铺平了道路</li>
+<li>Springboot就是Spring的完善和扩展，就是为我们编写开发，方便测试和部署，提高效率而诞生的框架技术</li>
+</ul>
+</li>
+<li>Spring Boot自动配置的原理<ul>
+<li>@EnableAutoConfiguration会读取工厂配置</li>
+<li>找到标注@Configuration的自动配置类</li>
+<li>自动配置类中使用@ConditionalXXX注解，进行条件配置，根据条件初始化Bean组件</li>
+<li>可以根据属性文件，Bean对象，Bean类型自动配置</li>
+</ul>
+</li>
+</ul>
+<h2 id="SpringMVC"><a href="#SpringMVC" class="headerlink" title="SpringMVC"></a>SpringMVC</h2><ul>
+<li>MVC的设计理念<ul>
+<li>MVC是一种使用MVC（Model View Controller）设计创建Wed运行程序的模式</li>
+<li>Model（模型）：表示应用程序的核心，处理应用程序数据逻辑的部分</li>
+<li>View（视图）：显示数据</li>
+<li>Controller（控制器）：处理输入与交互流程</li>
+</ul>
+</li>
+<li>Spring MVC的常用注解<ul>
+<li>@Controller：用于配合组件扫描创建控制器对象</li>
+<li>@ResponseBody：表示控制器方法的返回值绑定到HTTP响应体</li>
+<li>@PostMaping：用于将HTTP POST请求映射到特定的处理方法的注解</li>
+<li>@GETMaping：用于将HTTP GET请求映射到特定的处理方法的注解</li>
+</ul>
+</li>
+</ul>
+<h2 id="MyBatis"><a href="#MyBatis" class="headerlink" title="MyBatis"></a>MyBatis</h2><ul>
+<li>#{}和${}的区别<ul>
+<li>#{}是预编译处理，${}是字符串替换</li>
+<li>Mybatis在处理#{}时，会将sql中的#{}替换为？号</li>
+<li>Mybatis在处理${}时，就是把${}替换成变量的值，也就是字符串拼接，存在SQL注入风险</li>
+</ul>
+</li>
+<li>MyBatis怎么防止SQL注入<ul>
+<li>#{}方式是SQL预编译处理，很大程度上防止了SQL注入，${}方式是直接sql拼接无法防止SQL注入</li>
+</ul>
+</li>
+<li>简述Mybatis的单个参数，多个参数如何声明？<ul>
+<li>单个参数直接定义即可</li>
+<li>多个参数使用@Param注解传递多个参数</li>
+<li>通过JavaBean传递多个参数</li>
+</ul>
+</li>
+<li>Mybatis如何实现分页？<ul>
+<li>通过limit实现分页</li>
+<li>RowBounds实现分页</li>
+<li>通过MyBatis分页插件PageHelper实现分页</li>
+</ul>
+</li>
+</ul>
+<hr>
 
                 
             </div>
@@ -435,7 +605,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2023/10/31/hello-world/">http://example.com/2023/10/31/hello-world/</a>
+                    <a href="http://example.com/2023/10/31/Spring/">http://example.com/2023/10/31/Spring/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -472,7 +642,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/Spring/">
+                                    <span class="chip bg-color">Spring</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -549,9 +723,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2023/10/31/Spring/">
                     <div class="card-image">
@@ -569,9 +744,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-10-31
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-10-31
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -580,6 +755,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -595,7 +771,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2023/10/31/hello-world/">
@@ -625,7 +801,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
